@@ -1,0 +1,53 @@
+$primary-color1: #1a202c;
+$primary-color2: white;
+$main-text: rgb(155, 152, 252);
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+    url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTa-j2U0lmluP9RWlSytm3ho.woff2)
+      format("woff2");
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $primary-color1;
+  color: $main-text;
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+section {
+  height: 100%;
+  width: 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  background-color: $primary-color2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+img {
+  height: 80vh;
+  width: 100vw;
+}
+p {
+  color: #415b91;
+  font-size: 20px;
+  font-family: Open Sans;
+  font-size: 22px;
+  font-weight: bold;
+}
+a {
+  color: #415b91;
+}
